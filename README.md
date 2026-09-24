@@ -44,6 +44,7 @@ Building an authorized password recovery and security assessment framework combi
 ### Method 1: Password Cracking with John the Ripper & Johnny GUI
 
 * **JTR & Johnny Download:** Downloaded John the Ripper and the Johnny GUI setup package (`johnny-2.2-win.zip`) from the official Openwall website, mirror links, or the course Google Drive folder.
+  * ![JTR Download Sources](installations.png)
 * **Application Installation:** Located and ran the Johnny installer setup file (`johnny-installer.exe`) from the `Downloads` folder to install Johnny on the Windows PC.
 * **Binary Path Configuration:** Configured Johnny by navigating to `Settings` and mapping the executable path to `john.exe` inside the JTR run folder.
 * **PDF Hash Extraction:** Uploaded the locked PDF file (`My Locked PDF1.pdf`) to an online PDF hash extractor to obtain the string starting with `$pdf$`.
