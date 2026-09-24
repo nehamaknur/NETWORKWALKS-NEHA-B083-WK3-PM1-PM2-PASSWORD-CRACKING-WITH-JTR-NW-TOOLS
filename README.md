@@ -67,6 +67,23 @@ Building an authorized password recovery and security assessment framework combi
   * ![Password Cracked Successfully](1-pwd-cracked.png)
   * ![Password 2 Cracked Successfully](2-pwd-cracked.png)
   * ![Password 3 Cracked Successfully](3-pwd-cracked.png)
+
+### Method 2: Password Cracking with Networkwalks Tools (Applied to Multiple Locked PDFs)
+
+* **Hash Calculator Access:** Opened the browser-based Networkwalks Hash Calculator utility.
+  * ![Hash Calculator Interface](nw-hash-calculator.png)
+* **File Upload & Parsing:** Uploaded the target locked PDF files (`My Locked PDF1.pdf`, `My Locked PDF2.pdf`, and `My Locked PDF3.pdf`) to automatically parse and generate the crackable hash format.
+  * ![Password tracker](nw-pwd-cracker.png)
+  * Similarly, extracted the hash values for `My Locked PDF2.pdf` and `My Locked PDF3.pdf` using the Hash Calculator.
+* **Hash String Retrieval:** Copied the complete hash string beginning with `$pdf$` for each respective document.
+* **Dictionary Attack Execution:** Navigated to the Networkwalks Password Cracker, pasted the hash, activated the built-in dictionary list, and selected `Start Cracking`.
+  * ![Password Cracker Tool Execution](nw-pdf1-pwd.png)
+  * ![Password Cracker Tool Execution 2](nw-pdf2-pwd.png)
+  * ![Password Cracker Tool Execution 3](nw-pdf3-pwd.png)
+* **Document Unlocking:** Extracted the matched cleartext passwords (`password1`, `password2`, `password3`) from the screen display and entered them to successfully open and view all the protected PDF files.
+  * ![Password Cracked Successfully](1-pwd-cracked.png)
+  * ![Password 2 Cracked Successfully](2-pwd-cracked.png)
+  * ![Password 3 Cracked Successfully](3-pwd-cracked.png)
     
 ## 📌 Key Security Concepts & Takeaways
 * **Encryption vs. Hashing:** Encryption is a two-way reversible function for data protection, whereas hashing is a one-way mathematical function used for verification[cite: 6].
