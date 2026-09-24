@@ -41,17 +41,33 @@ Building an authorized password recovery and security assessment framework combi
 
 ## ⚙️ Methodology & Execution
 
-### Method 1: Password Cracking with John the Ripper & Johnny GUI
+### Method 1: Password Cracking with John the Ripper & Johnny GUI (Applied to Multiple Locked PDFs)
 
 * **JTR & Johnny Download:** Downloaded John the Ripper and the Johnny GUI setup package (`johnny-2.2-win.zip`) from the official Openwall website, mirror links, or the course Google Drive folder.
+  
   * ![JTR Download Sources](installations.png)
 * **Application Installation:** Located and ran the Johnny installer setup file (`johnny-installer.exe`) from the `Downloads` folder to install Johnny on the Windows PC.
+  
+  * ![Johnny Installer Execution](john location.png)
 * **Binary Path Configuration:** Configured Johnny by navigating to `Settings` and mapping the executable path to `john.exe` inside the JTR run folder.
+  
+  * ![Johnny Settings and Path Mapping](browse-john.exe.png)
 * **PDF Hash Extraction:** Uploaded the locked PDF file (`My Locked PDF1.pdf`) to an online PDF hash extractor to obtain the string starting with `$pdf$`.
-* **Hash File Preparation:** Pasted the extracted hash into Notepad, ensured no extra leading characters remained, and saved it as `hash1.txt`.
-* **Attack Initialization:** Opened Johnny, selected `Open password file` to load `hash1.txt`, and initiated the process using `Start new attack`.
-* **Credential Recovery:** Retrieved and copied the recovered cleartext password (`password1`) to successfully unlock and view the PDF document.
-
+  
+  * ![PDF Hash Extractor Upload](hash-exe.png)
+  * Similarly, extracted the hash values for `My Locked PDF2.pdf` and `My Locked PDF3.pdf` using the online PDF hash extractor.
+* **Hash File Preparation:** Pasted each extracted hash into Notepad, ensured no extra leading characters remained, and saved them respectively as `hash1.txt`, `hash2.txt`, and `hash3.txt`.
+* **Attack Initialization:** Opened Johnny, selected `Open password file` to load each hash text file sequentially, and initiated the process using `Start new attack`.
+  
+  * ![Johnny Attack Execution](johnny-pwd1.png)
+  * ![Johnny Attack Execution 2](johnny-pwd2.png)
+  * ![Johnny Attack Execution 3](johnny-pwd3.png)
+* **Credential Recovery:** Retrieved and copied the recovered cleartext passwords (`password1`, `password2`, `password3`) to successfully unlock and view all the PDF documents.
+  
+  * ![Password Cracked Successfully](1-pwd-cracked.png)
+  * ![Password 2 Cracked Successfully](2-pwd-cracked.png)
+  * ![Password 3 Cracked Successfully](3-pwd-cracked.png)
+    
 ## 📌 Key Security Concepts & Takeaways
 * **Encryption vs. Hashing:** Encryption is a two-way reversible function for data protection, whereas hashing is a one-way mathematical function used for verification[cite: 6].
 * **Password Vulnerability:** Short or common patterns (such as dictionary words or simple character strings) can be compromised in minutes via automated dictionary attacks[cite: 6].
