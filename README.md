@@ -61,8 +61,11 @@ This project demonstrates the practical implementation of password cracking and 
 * **Attack Initialization:** Opened Johnny, selected `Open password file` to load each hash text file sequentially (`hash1.txt`, `hash2.txt`, and `hash3.txt`), and initiated the process using `Start new attack`.
   
    ![Johnny Attack Execution](johnny-pwd1.png)
+  *Figure: Cracking password hash for My Locked PDF1.pdf*
    ![Johnny Attack Execution 2](johnny-pwd2.png)
+  *Figure: Cracking password hash for My Locked PDF2.pdf*
    ![Johnny Attack Execution 3](johnny-pwd3.png)
+  *Figure: Cracking password hash for My Locked PDF3.pdf*
 
 ### Method 2: Password Cracking with Networkwalks Tools (Applied to Multiple Locked PDFs)
 
@@ -77,16 +80,22 @@ This project demonstrates the practical implementation of password cracking and 
 * **Dictionary Attack Execution:** Navigated to the Networkwalks Password Cracker, pasted the extracted hashes for each file sequentially, activated the built-in dictionary list, and selected `Start Cracking`.
   
    ![Password Cracker Tool Execution](nw-pdf1-pwd.png)
+  *Figure: Handling wordlist limitation and custom upload for My Locked PDF1.pdf*
    ![Password Cracker Tool Execution 2](nw-pdf2-pwd.png)
+  *Figure: Cracking password for My Locked PDF2.pdf*
    ![Password Cracker Tool Execution 3](nw-pdf3-pwd.png)
+  *Figure: Cracking password for My Locked PDF3.pdf*
 
 ### Common Step: Document Unlocking (Applicable to Both Methods)
 
 * **Document Unlocking:** Extracted and copied the matched cleartext passwords (`password1`, `password2`, and `password3`) from the screen display for all three files, then entered them into the PDF reader to successfully open and view all the protected PDF documents.
   
    ![Password Cracked Successfully](1-pwd-cracked.png)
+  *Figure: Successfully unlocked My Locked PDF1.pdf*
    ![Password 2 Cracked Successfully](2-pwd-cracked.png)
+  *Figure: Successfully unlocked My Locked PDF2.pdf*
    ![Password 3 Cracked Successfully](3-pwd-cracked.png)
+  *Figure: Successfully unlocked My Locked PDF2.pdf*
 
 ### ⚠️ Problems Faced & Solutions
 
