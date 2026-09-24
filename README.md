@@ -62,8 +62,10 @@ This project demonstrates the practical implementation of password cracking and 
   
    ![Johnny Attack Execution](johnny-pwd1.png)
   *Figure: Cracking password hash for My Locked PDF1.pdf*
+  
    ![Johnny Attack Execution 2](johnny-pwd2.png)
   *Figure: Cracking password hash for My Locked PDF2.pdf*
+  
    ![Johnny Attack Execution 3](johnny-pwd3.png)
   *Figure: Cracking password hash for My Locked PDF3.pdf*
 
@@ -81,8 +83,10 @@ This project demonstrates the practical implementation of password cracking and 
   
    ![Password Cracker Tool Execution](nw-pdf1-pwd.png)
   *Figure: Handling wordlist limitation and custom upload for My Locked PDF1.pdf*
+  
    ![Password Cracker Tool Execution 2](nw-pdf2-pwd.png)
   *Figure: Cracking password for My Locked PDF2.pdf*
+  
    ![Password Cracker Tool Execution 3](nw-pdf3-pwd.png)
   *Figure: Cracking password for My Locked PDF3.pdf*
 
@@ -92,10 +96,12 @@ This project demonstrates the practical implementation of password cracking and 
   
    ![Password Cracked Successfully](1-pwd-cracked.png)
   *Figure: Successfully unlocked My Locked PDF1.pdf*
+  
    ![Password 2 Cracked Successfully](2-pwd-cracked.png)
   *Figure: Successfully unlocked My Locked PDF2.pdf*
+  
    ![Password 3 Cracked Successfully](3-pwd-cracked.png)
-  *Figure: Successfully unlocked My Locked PDF2.pdf*
+  *Figure: Successfully unlocked My Locked PDF3.pdf*
 
 ### ⚠️ Problems Faced & Solutions
 
